@@ -6,8 +6,11 @@ public class Rule : MonoBehaviour
 
    
     public GameObject rule;
+    public bool open;
     public void printRule()
     {
-        rule.SetActive(true);
+        open = !open;
+        rule.SetActive(open);
+
     }
 }

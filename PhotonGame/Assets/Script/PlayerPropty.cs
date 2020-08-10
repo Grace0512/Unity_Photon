@@ -8,10 +8,13 @@ public class PlayerPropty : MonoBehaviour
     public PlayerContrl PlayerCtr;
     public Sprite[] glasses;
     public Image myglasses;
+    public int glassnum;
+
+
+
 
     void Start()
     {
-       
         PlayerCtr = FindObjectOfType<PlayerContrl>();
         pv = GetComponent<PhotonView>();
        
@@ -22,7 +25,7 @@ public class PlayerPropty : MonoBehaviour
         }
         if (pv.IsMine)
         {
-            PlayerCtr = FindObjectOfType<PlayerContrl>();
+            PlayerCtr= FindObjectOfType<PlayerContrl>();
             pv.transform.parent = PlayerCtr.transform;
         }
 
@@ -32,13 +35,30 @@ public class PlayerPropty : MonoBehaviour
 
     public void Glasses(int glasses)
     {
-        pv.RPC("ChangeGlasses", RpcTarget.All, glasses);
+       pv.RPC("ChangeGlasses", RpcTarget.All, glasses);
     }
+
+    
+
 
     [PunRPC]
     public void ChangeGlasses(int index)
     {
+        glassnum = index;
         myglasses.sprite = glasses[index];
     }
-        
+
+    /*
+    public void Glassesindex(int glasses)
+    {
+        pv.RPC("SaveGlasses", RpcTarget.All, glasses);
+    }
+
+    [PunRPC]
+    public void SaveGlasses(int index)
+    {
+        glassnum = index;
+    }
+    */
+
 }

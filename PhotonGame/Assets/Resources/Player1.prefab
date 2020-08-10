@@ -102,7 +102,7 @@ RectTransform:
   m_GameObject: {fileID: 4573775213023209326}
   m_LocalRotation: {x: 0, y: -1, z: 0, w: 0}
   m_LocalPosition: {x: 0, y: 0, z: 0}
-  m_LocalScale: {x: 10, y: 10, z: 1}
+  m_LocalScale: {x: 7, y: 7, z: 1}
   m_Children:
   - {fileID: 4573775213879229493}
   - {fileID: 4573775213885208390}
@@ -115,7 +115,7 @@ RectTransform:
   m_LocalEulerAnglesHint: {x: 0, y: -180, z: 0}
   m_AnchorMin: {x: 0.5, y: 0.5}
   m_AnchorMax: {x: 0.5, y: 0.5}
-  m_AnchoredPosition: {x: -405, y: 40}
+  m_AnchoredPosition: {x: -355, y: 40}
   m_SizeDelta: {x: 100, y: 100}
   m_Pivot: {x: 0.5, y: 0.5}
 --- !u!114 &-9124678606558725570
@@ -163,6 +163,7 @@ MonoBehaviour:
   - {fileID: 21300000, guid: a88847a32ffd46a458267977086864f6, type: 3}
   - {fileID: 21300000, guid: 11d8148f92269b84f856a77084dc6c93, type: 3}
   myglasses: {fileID: 4573775213150918370}
+  glassnum: 0
 --- !u!114 &2545119567981758469
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -242,8 +243,8 @@ MonoBehaviour:
   m_OnCullStateChanged:
     m_PersistentCalls:
       m_Calls: []
-  m_Sprite: {fileID: 21300000, guid: 2b6ed2a36cdc7ba469c4ac80c0b9c5c2, type: 3}
-  m_Type: 0
+  m_Sprite: {fileID: 10917, guid: 0000000000000000f000000000000000, type: 0}
+  m_Type: 1
   m_PreserveAspect: 0
   m_FillCenter: 1
   m_FillMethod: 4

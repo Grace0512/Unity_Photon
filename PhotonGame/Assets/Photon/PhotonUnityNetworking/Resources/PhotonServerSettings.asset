@@ -13,7 +13,7 @@ MonoBehaviour:
   m_Name: PhotonServerSettings
   m_EditorClassIdentifier: 
   AppSettings:
-    AppIdRealtime: 73dba54e-d15f-4e96-9589-da8299691e6d
+    AppIdRealtime: a8559191-a238-4ca0-9165-a043143f76e5
     AppIdChat: 
     AppIdVoice: 
     AppVersion: 
@@ -34,13 +34,14 @@ MonoBehaviour:
   StartInOfflineMode: 0
   RpcList:
   - ChangeColour
+  - ChangeGlasses
   - ClickRpc
   - DestroyRpc
   - DestroySpaceship
   - Fire
   - RespawnSpaceship
-  - ChangeGlasses
-  - CampareGlasses
+  - Changeturn
+  - SaveGlasses
   DisableAutoOpenWizard: 1
   ShowSettings: 1
   DevRegionSetOnce: 1
